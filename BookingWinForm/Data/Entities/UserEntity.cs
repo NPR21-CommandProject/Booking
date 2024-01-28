@@ -21,7 +21,7 @@ namespace BookingWinForm.Data.Entities
         [Required, StringLength(255)]
         public string FirstName { get; set; }
         [Required, StringLength(255)]
-        public string LasttName { get; set; }
+        public string LastName { get; set; }
         [Required, StringLength(255)]
         public string Password { get; set; }
         public DateTime DateCreated { get; set; }
