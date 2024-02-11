@@ -16,5 +16,11 @@ namespace BookingWinForm.FormsBooking
         {
             InitializeComponent();
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            RegistrationForm form = new RegistrationForm();
+            form.ShowDialog();
+        }
     }
 }
