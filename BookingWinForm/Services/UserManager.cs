@@ -16,7 +16,7 @@ namespace BookingWinForm.Services
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory());
 
-            string conStr = $"Data Source=20.65.144.204;User ID=kaban;Password=9[nV`e7VN`0%;Initial Catalog=Booking;MultipleActiveResultSets=true;";
+            string conStr = $"Data Source=20.65.144.204;User ID=kaban;Password=9[nV`e7VN`0%;Initial Catalog=Booking;MultipleActiveResultSets=true;trustServerCertificate=true";
             try
             {
                 _con = new SqlConnection(conStr);
