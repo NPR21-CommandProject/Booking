@@ -1,10 +1,13 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using BookingWinForm.FormsBooking;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace BookingWinForm.Services
 {
@@ -25,6 +28,40 @@ namespace BookingWinForm.Services
             catch (Exception ex)
             {
                 MessageBox.Show("Помилка підключення!!! " + ex.Message);
+            }
+        }
+
+        private bool IsExistUser(string email, string pass)
+        {
+
+            string query = $"SELECT COUNT(*) FROM tblUsers WHERE Email = '{email}' AND Password = '{pass}'";
+            SqlCommand command = new SqlCommand(query, _con);
+            int tableCount = (int)command.ExecuteScalar();
+            if (tableCount > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public void LoginUser(string email, string pass)
+        {
+            var isExist = IsExistUser(email, pass);
+            if (isExist) 
+            {
+                MainForm mainForm = new MainForm();
+                mainForm.ShowDialog();
+            }
+            else if (!isExist)
+            {
+                MessageBox.Show("Користувача з такою поштою та паролем не знайдено");
+            }
+            else
+            {
+                MessageBox.Show("Script Error!!!");
             }
         }
 

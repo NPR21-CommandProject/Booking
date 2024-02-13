@@ -86,6 +86,7 @@
             btnLogin.TabIndex = 2;
             btnLogin.Text = "Під'єднатися";
             btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
             // btnRegister
             // 
