@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace BookingWinForm.FormsBooking
 {
-    public partial class AddNewHotel : Form
+    public partial class Search_print : Form
     {
-        public AddNewHotel()
+        public Search_print()
         {
             InitializeComponent();
-        }
-
-        private void checkBoxWiFi_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox14_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
