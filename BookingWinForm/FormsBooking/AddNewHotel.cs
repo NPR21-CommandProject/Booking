@@ -16,15 +16,5 @@ namespace BookingWinForm.FormsBooking
         {
             InitializeComponent();
         }
-
-        private void checkBoxWiFi_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox14_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
