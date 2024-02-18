@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BookingWinForm.Data.Entities;
+using BookingWinForm.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +23,16 @@ namespace BookingWinForm.FormsBooking
         {
             RegistrationForm form = new RegistrationForm();
             form.ShowDialog();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            UserEntity user = new UserEntity();
+            user.Email = txtUserEmail.Text;
+            user.Password = txtPassword.Text;
+            
+            UserManager manager = new UserManager();
+            manager.LoginUser(user.Email, user.Password);
         }
     }
 }
