@@ -27,10 +27,16 @@ namespace BookingWinForm.FormsBooking
                 Phone = "+380 97 123 45 67"
             };
 
-            BookingContext context = new BookingContext();  
+            BookingContext context = new BookingContext();
             context.Users.Add(entity);
             context.SaveChanges();
 
+        }
+
+        private void ViewProfileStrip_Click(object sender, EventArgs e)
+        {
+            ProfileForm form = new ProfileForm();
+            form.ShowDialog();
         }
     }
 }

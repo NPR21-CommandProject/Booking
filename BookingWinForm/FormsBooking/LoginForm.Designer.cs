@@ -28,120 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            txtServerHost = new TextBox();
             label2 = new Label();
-            txtUserName = new TextBox();
+            txtUserEmail = new TextBox();
             label3 = new Label();
             txtPassword = new TextBox();
-            btnCheckConnection = new Button();
-            btnSave = new Button();
-            btnCancel = new Button();
+            btnLogin = new Button();
+            btnRegister = new Button();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 11F);
-            label1.Location = new Point(46, 40);
-            label1.Name = "label1";
-            label1.Size = new Size(147, 50);
-            label1.TabIndex = 0;
-            label1.Text = "Сервер";
-            // 
-            // txtServerHost
-            // 
-            txtServerHost.Font = new Font("Segoe UI", 11F);
-            txtServerHost.Location = new Point(46, 106);
-            txtServerHost.Name = "txtServerHost";
-            txtServerHost.Size = new Size(490, 56);
-            txtServerHost.TabIndex = 1;
-            txtServerHost.Text = "Server";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 11F);
-            label2.Location = new Point(46, 193);
+            label2.Location = new Point(31, 9);
+            label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
-            label2.Size = new Size(113, 50);
+            label2.Size = new Size(138, 20);
             label2.TabIndex = 0;
-            label2.Text = "Логін";
+            label2.Text = "Електронна пошта";
             // 
-            // txtUserName
+            // txtUserEmail
             // 
-            txtUserName.Font = new Font("Segoe UI", 11F);
-            txtUserName.Location = new Point(46, 259);
-            txtUserName.Name = "txtUserName";
-            txtUserName.Size = new Size(490, 56);
-            txtUserName.TabIndex = 1;
-            txtUserName.Text = "User";
+            txtUserEmail.Font = new Font("Segoe UI", 11F);
+            txtUserEmail.Location = new Point(31, 30);
+            txtUserEmail.Margin = new Padding(1);
+            txtUserEmail.Name = "txtUserEmail";
+            txtUserEmail.Size = new Size(138, 27);
+            txtUserEmail.TabIndex = 1;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 11F);
-            label3.Location = new Point(46, 361);
+            label3.Location = new Point(191, 9);
+            label3.Margin = new Padding(1, 0, 1, 0);
             label3.Name = "label3";
-            label3.Size = new Size(150, 50);
+            label3.Size = new Size(62, 20);
             label3.TabIndex = 0;
             label3.Text = "Пароль";
             // 
             // txtPassword
             // 
             txtPassword.Font = new Font("Segoe UI", 11F);
-            txtPassword.Location = new Point(46, 427);
+            txtPassword.Location = new Point(191, 30);
+            txtPassword.Margin = new Padding(1);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(490, 56);
+            txtPassword.Size = new Size(138, 27);
             txtPassword.TabIndex = 1;
-            txtPassword.Text = "Password";
             // 
-            // btnCheckConnection
+            // btnLogin
             // 
-            btnCheckConnection.Font = new Font("Segoe UI", 11F);
-            btnCheckConnection.Location = new Point(63, 564);
-            btnCheckConnection.Name = "btnCheckConnection";
-            btnCheckConnection.Size = new Size(495, 81);
-            btnCheckConnection.TabIndex = 2;
-            btnCheckConnection.Text = "Пееревірити з'єднання";
-            btnCheckConnection.UseVisualStyleBackColor = true;
+            btnLogin.Font = new Font("Segoe UI", 11F);
+            btnLogin.Location = new Point(31, 72);
+            btnLogin.Margin = new Padding(1);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(138, 34);
+            btnLogin.TabIndex = 2;
+            btnLogin.Text = "Під'єднатися";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
-            // btnSave
+            // btnRegister
             // 
-            btnSave.Font = new Font("Segoe UI", 11.1F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            btnSave.ForeColor = Color.Blue;
-            btnSave.Location = new Point(821, 92);
-            btnSave.Name = "btnSave";
-            btnSave.Size = new Size(366, 58);
-            btnSave.TabIndex = 3;
-            btnSave.Text = "Зберегти";
-            btnSave.UseVisualStyleBackColor = true;
-            // 
-            // btnCancel
-            // 
-            btnCancel.Font = new Font("Segoe UI", 11.1F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            btnCancel.ForeColor = Color.Red;
-            btnCancel.Location = new Point(821, 224);
-            btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(366, 58);
-            btnCancel.TabIndex = 3;
-            btnCancel.Text = "Скаcувати";
-            btnCancel.UseVisualStyleBackColor = true;
+            btnRegister.Font = new Font("Segoe UI", 11F);
+            btnRegister.Location = new Point(31, 117);
+            btnRegister.Margin = new Padding(1);
+            btnRegister.Name = "btnRegister";
+            btnRegister.Size = new Size(138, 34);
+            btnRegister.TabIndex = 3;
+            btnRegister.Text = "Зареєструватися";
+            btnRegister.UseVisualStyleBackColor = true;
+            btnRegister.Click += btnRegister_Click;
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1265, 691);
-            Controls.Add(btnCancel);
-            Controls.Add(btnSave);
-            Controls.Add(btnCheckConnection);
+            ClientSize = new Size(359, 175);
+            Controls.Add(btnRegister);
+            Controls.Add(btnLogin);
             Controls.Add(txtPassword);
             Controls.Add(label3);
-            Controls.Add(txtUserName);
+            Controls.Add(txtUserEmail);
             Controls.Add(label2);
-            Controls.Add(txtServerHost);
-            Controls.Add(label1);
+            Margin = new Padding(1);
             Name = "LoginForm";
             Text = "Форма підключення";
             ResumeLayout(false);
@@ -149,15 +119,11 @@
         }
 
         #endregion
-
-        private Label label1;
-        private TextBox txtServerHost;
         private Label label2;
-        private TextBox txtUserName;
+        private TextBox txtUserEmail;
         private Label label3;
         private TextBox txtPassword;
-        private Button btnCheckConnection;
-        private Button btnSave;
-        private Button btnCancel;
+        private Button btnLogin;
+        private Button btnRegister;
     }
 }

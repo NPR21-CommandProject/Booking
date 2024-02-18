@@ -12,27 +12,25 @@ using System.Windows.Forms;
 
 namespace BookingWinForm.FormsBooking
 {
-    public partial class LoginForm : Form
+    public partial class RegistrationForm : Form
     {
-        public LoginForm()
+        public RegistrationForm()
         {
             InitializeComponent();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            RegistrationForm form = new RegistrationForm();
-            form.ShowDialog();
-        }
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
             UserEntity user = new UserEntity();
-            user.Email = txtUserEmail.Text;
+            user.Email = txtEmail.Text;
             user.Password = txtPassword.Text;
-            
-            UserManager manager = new UserManager();
-            manager.LoginUser(user.Email, user.Password);
+            user.Phone = txtPhone.Text;
+            user.FirstName = txtFirstN.Text;
+            user.LastName = txtLastN.Text;
+            user.DateCreated = DateTime.Now;
+            UserManager userManager = new UserManager();
+            userManager.RegisterUser(user.Email, user.Password, user.Phone, user.FirstName, user.LastName, user.DateCreated);
+            MessageBox.Show("Аккаунт успішно створено!");
         }
     }
 }
