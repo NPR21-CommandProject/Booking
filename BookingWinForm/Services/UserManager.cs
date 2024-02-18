@@ -1,7 +1,9 @@
-﻿using BookingWinForm.FormsBooking;
+﻿using BookingWinForm.Data.Entities;
+using BookingWinForm.FormsBooking;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Configuration;
+using Microsoft.SqlServer.Server;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +16,7 @@ namespace BookingWinForm.Services
     internal class UserManager
     {
         private readonly SqlConnection _con;
+        public string Email;
         public UserManager()
         {
             var builder = new ConfigurationBuilder()
@@ -33,17 +36,15 @@ namespace BookingWinForm.Services
 
         private bool IsExistUser(string email, string pass)
         {
+            string query = "SELECT COUNT(*) FROM tblUsers WHERE Email = @Email AND Password = @password";
+            using (SqlCommand command = new SqlCommand(query, _con))
+            {
+                command.Parameters.AddWithValue("@Email", email);
+                command.Parameters.AddWithValue("@Password", pass);
 
-            string query = $"SELECT COUNT(*) FROM tblUsers WHERE Email = '{email}' AND Password = '{pass}'";
-            SqlCommand command = new SqlCommand(query, _con);
-            int tableCount = (int)command.ExecuteScalar();
-            if (tableCount > 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
+                int tableCount = (int)command.ExecuteScalar();
+
+                return tableCount > 0;
             }
         }
 
@@ -54,6 +55,7 @@ namespace BookingWinForm.Services
             {
                 MainForm mainForm = new MainForm();
                 mainForm.ShowDialog();
+                Email = email; 
             }
             else if (!isExist)
             {
@@ -84,6 +86,29 @@ namespace BookingWinForm.Services
             catch (Exception ex)
             {
                 MessageBox.Show("Помилка додавання користувача!!! " + ex.Message);
+            }
+        }
+
+        public void FillProfile()
+        {
+            string sqlQuery = $"SELECT * FROM tblUsers WHERE Email = '{Email}'";
+            SqlCommand command = new SqlCommand(sqlQuery, _con);
+            try
+            {
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    string FirstName = reader["FirstName"].ToString();
+                    string LastName = reader["LastName"].ToString();
+                    string email = reader["Email"].ToString();
+                    string phone = reader["Phone"].ToString();
+                    DateTime dateOfCreation = Convert.ToDateTime(reader["DateCreated"]);
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
         }
     }
