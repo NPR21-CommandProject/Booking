@@ -78,12 +78,8 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9.900001F, FontStyle.Bold, GraphicsUnit.Point, 204);
-<<<<<<< Updated upstream
-            label1.Location = new Point(57, 79);
-=======
             label1.Location = new Point(57, 80);
             label1.Margin = new Padding(2, 0, 2, 0);
->>>>>>> Stashed changes
             label1.Name = "label1";
             label1.Size = new Size(115, 46);
             label1.TabIndex = 0;
@@ -91,15 +87,6 @@
             // 
             // txtCity
             // 
-<<<<<<< Updated upstream
-            textCity.Font = new Font("Segoe UI", 10F);
-            textCity.Location = new Point(59, 142);
-            textCity.Name = "textCity";
-            textCity.Size = new Size(612, 52);
-            textCity.TabIndex = 1;
-            textCity.Text = "Місто";
-            textCity.UseWaitCursor = true;
-=======
             txtCity.Font = new Font("Segoe UI", 10F);
             txtCity.Location = new Point(60, 141);
             txtCity.Margin = new Padding(2, 2, 2, 2);
@@ -108,18 +95,13 @@
             txtCity.TabIndex = 1;
             txtCity.Text = "Місто";
             txtCity.UseWaitCursor = true;
->>>>>>> Stashed changes
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.900001F, FontStyle.Bold, GraphicsUnit.Point, 204);
-<<<<<<< Updated upstream
-            label2.Location = new Point(909, 54);
-=======
             label2.Location = new Point(910, 53);
             label2.Margin = new Padding(2, 0, 2, 0);
->>>>>>> Stashed changes
             label2.Name = "label2";
             label2.Size = new Size(342, 46);
             label2.TabIndex = 0;
@@ -130,10 +112,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 10F);
             label3.Location = new Point(682, 100);
-<<<<<<< Updated upstream
-=======
             label3.Margin = new Padding(2, 0, 2, 0);
->>>>>>> Stashed changes
             label3.Name = "label3";
             label3.Size = new Size(73, 46);
             label3.TabIndex = 0;
@@ -141,28 +120,18 @@
             // 
             // dateTimePicker1
             // 
-<<<<<<< Updated upstream
-            dateTimePicker1.Location = new Point(692, 147);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(390, 47);
-=======
             dateTimePicker1.Location = new Point(693, 148);
             dateTimePicker1.Margin = new Padding(2, 2, 2, 2);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(391, 47);
->>>>>>> Stashed changes
             dateTimePicker1.TabIndex = 2;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 10F);
-<<<<<<< Updated upstream
-            label4.Location = new Point(1136, 100);
-=======
             label4.Location = new Point(1137, 100);
             label4.Margin = new Padding(2, 0, 2, 0);
->>>>>>> Stashed changes
             label4.Name = "label4";
             label4.Size = new Size(71, 46);
             label4.TabIndex = 0;
@@ -170,41 +139,25 @@
             // 
             // dateTimePicker2
             // 
-<<<<<<< Updated upstream
-            dateTimePicker2.Location = new Point(1146, 147);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(390, 47);
-=======
             dateTimePicker2.Location = new Point(1145, 148);
             dateTimePicker2.Margin = new Padding(2, 2, 2, 2);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(391, 47);
->>>>>>> Stashed changes
             dateTimePicker2.TabIndex = 2;
             // 
             // treePhotos
             // 
-<<<<<<< Updated upstream
-            treePhotos.Location = new Point(12, 1254);
-            treePhotos.Name = "treePhotos";
-            treePhotos.Size = new Size(1646, 242);
-=======
             treePhotos.Location = new Point(13, 1255);
             treePhotos.Margin = new Padding(2, 2, 2, 2);
             treePhotos.Name = "treePhotos";
             treePhotos.Size = new Size(2171, 564);
->>>>>>> Stashed changes
             treePhotos.TabIndex = 3;
             // 
             // checkBoxWiFi
             // 
             checkBoxWiFi.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBoxWiFi.Location = new Point(26, 511);
-=======
             checkBoxWiFi.Location = new Point(26, 510);
             checkBoxWiFi.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBoxWiFi.Name = "checkBoxWiFi";
             checkBoxWiFi.Size = new Size(321, 45);
             checkBoxWiFi.TabIndex = 4;
@@ -215,12 +168,8 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9.900001F, FontStyle.Bold, GraphicsUnit.Point, 204);
-<<<<<<< Updated upstream
-            label5.Location = new Point(43, 458);
-=======
             label5.Location = new Point(42, 457);
             label5.Margin = new Padding(2, 0, 2, 0);
->>>>>>> Stashed changes
             label5.Name = "label5";
             label5.Size = new Size(118, 46);
             label5.TabIndex = 5;
@@ -230,10 +179,7 @@
             // 
             checkBox1.AutoSize = true;
             checkBox1.Location = new Point(26, 562);
-<<<<<<< Updated upstream
-=======
             checkBox1.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(413, 45);
             checkBox1.TabIndex = 4;
@@ -244,10 +190,7 @@
             // 
             checkBox2.AutoSize = true;
             checkBox2.Location = new Point(26, 613);
-<<<<<<< Updated upstream
-=======
             checkBox2.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(275, 45);
             checkBox2.TabIndex = 4;
@@ -258,10 +201,7 @@
             // 
             checkBox3.AutoSize = true;
             checkBox3.Location = new Point(26, 666);
-<<<<<<< Updated upstream
-=======
             checkBox3.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(352, 45);
             checkBox3.TabIndex = 4;
@@ -271,12 +211,8 @@
             // checkBox4
             // 
             checkBox4.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox4.Location = new Point(26, 717);
-=======
             checkBox4.Location = new Point(26, 718);
             checkBox4.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox4.Name = "checkBox4";
             checkBox4.Size = new Size(502, 45);
             checkBox4.TabIndex = 4;
@@ -286,12 +222,8 @@
             // checkBox5
             // 
             checkBox5.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox5.Location = new Point(26, 768);
-=======
             checkBox5.Location = new Point(26, 769);
             checkBox5.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox5.Name = "checkBox5";
             checkBox5.Size = new Size(192, 45);
             checkBox5.TabIndex = 4;
@@ -301,12 +233,8 @@
             // checkBox6
             // 
             checkBox6.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox6.Location = new Point(26, 819);
-=======
             checkBox6.Location = new Point(26, 820);
             checkBox6.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox6.Name = "checkBox6";
             checkBox6.Size = new Size(173, 45);
             checkBox6.TabIndex = 4;
@@ -318,10 +246,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9.900001F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label6.Location = new Point(55, 203);
-<<<<<<< Updated upstream
-=======
             label6.Margin = new Padding(2, 0, 2, 0);
->>>>>>> Stashed changes
             label6.Name = "label6";
             label6.Size = new Size(139, 46);
             label6.TabIndex = 0;
@@ -329,15 +254,6 @@
             // 
             // txtAdress
             // 
-<<<<<<< Updated upstream
-            textBox1.Font = new Font("Segoe UI", 10F);
-            textBox1.Location = new Point(55, 252);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(1479, 52);
-            textBox1.TabIndex = 1;
-            textBox1.Text = "Вулиця/проспект, будинок";
-            textBox1.UseWaitCursor = true;
-=======
             txtAdress.Font = new Font("Segoe UI", 10F);
             txtAdress.Location = new Point(55, 252);
             txtAdress.Margin = new Padding(2, 2, 2, 2);
@@ -346,18 +262,13 @@
             txtAdress.TabIndex = 1;
             txtAdress.Text = "Вулиця/проспект, будинок";
             txtAdress.UseWaitCursor = true;
->>>>>>> Stashed changes
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10F);
-<<<<<<< Updated upstream
-            label7.Location = new Point(59, 334);
-=======
             label7.Location = new Point(60, 334);
             label7.Margin = new Padding(2, 0, 2, 0);
->>>>>>> Stashed changes
             label7.Name = "label7";
             label7.Size = new Size(264, 46);
             label7.TabIndex = 0;
@@ -365,12 +276,8 @@
             // 
             // txtRoomsNumber
             // 
-<<<<<<< Updated upstream
-            txtRoomsNumber.Location = new Point(329, 333);
-=======
             txtRoomsNumber.Location = new Point(329, 332);
             txtRoomsNumber.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             txtRoomsNumber.Name = "txtRoomsNumber";
             txtRoomsNumber.Size = new Size(250, 47);
             txtRoomsNumber.TabIndex = 6;
@@ -378,12 +285,8 @@
             // checkBox7
             // 
             checkBox7.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox7.Location = new Point(555, 511);
-=======
             checkBox7.Location = new Point(555, 510);
             checkBox7.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox7.Name = "checkBox7";
             checkBox7.Size = new Size(470, 45);
             checkBox7.TabIndex = 4;
@@ -394,10 +297,7 @@
             // 
             checkBox8.AutoSize = true;
             checkBox8.Location = new Point(555, 562);
-<<<<<<< Updated upstream
-=======
             checkBox8.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox8.Name = "checkBox8";
             checkBox8.Size = new Size(456, 45);
             checkBox8.TabIndex = 4;
@@ -408,10 +308,7 @@
             // 
             checkBox9.AutoSize = true;
             checkBox9.Location = new Point(555, 666);
-<<<<<<< Updated upstream
-=======
             checkBox9.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox9.Name = "checkBox9";
             checkBox9.Size = new Size(318, 45);
             checkBox9.TabIndex = 4;
@@ -421,12 +318,8 @@
             // checkBox10
             // 
             checkBox10.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox10.Location = new Point(555, 717);
-=======
             checkBox10.Location = new Point(555, 718);
             checkBox10.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox10.Name = "checkBox10";
             checkBox10.Size = new Size(302, 45);
             checkBox10.TabIndex = 4;
@@ -437,10 +330,7 @@
             // 
             checkBox11.AutoSize = true;
             checkBox11.Location = new Point(555, 613);
-<<<<<<< Updated upstream
-=======
             checkBox11.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox11.Name = "checkBox11";
             checkBox11.Size = new Size(366, 45);
             checkBox11.TabIndex = 4;
@@ -450,12 +340,8 @@
             // checkBox12
             // 
             checkBox12.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox12.Location = new Point(555, 768);
-=======
             checkBox12.Location = new Point(555, 769);
             checkBox12.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox12.Name = "checkBox12";
             checkBox12.Size = new Size(192, 45);
             checkBox12.TabIndex = 4;
@@ -465,12 +351,8 @@
             // checkBox13
             // 
             checkBox13.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox13.Location = new Point(555, 819);
-=======
             checkBox13.Location = new Point(555, 820);
             checkBox13.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox13.Name = "checkBox13";
             checkBox13.Size = new Size(376, 45);
             checkBox13.TabIndex = 4;
@@ -481,12 +363,8 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 10F);
-<<<<<<< Updated upstream
-            label8.Location = new Point(630, 334);
-=======
             label8.Location = new Point(629, 334);
             label8.Margin = new Padding(2, 0, 2, 0);
->>>>>>> Stashed changes
             label8.Name = "label8";
             label8.Size = new Size(216, 46);
             label8.TabIndex = 0;
@@ -495,10 +373,7 @@
             // txtSquare
             // 
             txtSquare.Location = new Point(852, 334);
-<<<<<<< Updated upstream
-=======
             txtSquare.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             txtSquare.Name = "txtSquare";
             txtSquare.Size = new Size(250, 47);
             txtSquare.TabIndex = 6;
@@ -507,12 +382,8 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 9.900001F, FontStyle.Bold, GraphicsUnit.Point, 204);
-<<<<<<< Updated upstream
-            label9.Location = new Point(12, 1184);
-=======
             label9.Location = new Point(13, 1185);
             label9.Margin = new Padding(2, 0, 2, 0);
->>>>>>> Stashed changes
             label9.Name = "label9";
             label9.Size = new Size(115, 46);
             label9.TabIndex = 5;
@@ -521,12 +392,8 @@
             // checkBox14
             // 
             checkBox14.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox14.Location = new Point(1097, 511);
-=======
             checkBox14.Location = new Point(1096, 510);
             checkBox14.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox14.Name = "checkBox14";
             checkBox14.Size = new Size(536, 45);
             checkBox14.TabIndex = 4;
@@ -536,12 +403,8 @@
             // checkBox15
             // 
             checkBox15.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox15.Location = new Point(1097, 562);
-=======
             checkBox15.Location = new Point(1096, 562);
             checkBox15.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox15.Name = "checkBox15";
             checkBox15.Size = new Size(255, 45);
             checkBox15.TabIndex = 4;
@@ -551,12 +414,8 @@
             // checkBox16
             // 
             checkBox16.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox16.Location = new Point(1097, 666);
-=======
             checkBox16.Location = new Point(1096, 666);
             checkBox16.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox16.Name = "checkBox16";
             checkBox16.Size = new Size(318, 45);
             checkBox16.TabIndex = 4;
@@ -566,12 +425,8 @@
             // checkBox17
             // 
             checkBox17.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox17.Location = new Point(1097, 717);
-=======
             checkBox17.Location = new Point(1096, 718);
             checkBox17.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox17.Name = "checkBox17";
             checkBox17.Size = new Size(239, 45);
             checkBox17.TabIndex = 4;
@@ -581,12 +436,8 @@
             // checkBox18
             // 
             checkBox18.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox18.Location = new Point(1097, 613);
-=======
             checkBox18.Location = new Point(1096, 613);
             checkBox18.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox18.Name = "checkBox18";
             checkBox18.Size = new Size(235, 45);
             checkBox18.TabIndex = 4;
@@ -596,12 +447,8 @@
             // checkBox19
             // 
             checkBox19.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox19.Location = new Point(1097, 768);
-=======
             checkBox19.Location = new Point(1096, 769);
             checkBox19.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox19.Name = "checkBox19";
             checkBox19.Size = new Size(111, 45);
             checkBox19.TabIndex = 4;
@@ -611,12 +458,8 @@
             // checkBox20
             // 
             checkBox20.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox20.Location = new Point(1097, 819);
-=======
             checkBox20.Location = new Point(1096, 820);
             checkBox20.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox20.Name = "checkBox20";
             checkBox20.Size = new Size(235, 45);
             checkBox20.TabIndex = 4;
@@ -626,12 +469,8 @@
             // checkBox21
             // 
             checkBox21.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox21.Location = new Point(26, 870);
-=======
             checkBox21.Location = new Point(26, 869);
             checkBox21.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox21.Name = "checkBox21";
             checkBox21.Size = new Size(142, 45);
             checkBox21.TabIndex = 4;
@@ -641,12 +480,8 @@
             // checkBox22
             // 
             checkBox22.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox22.Location = new Point(555, 870);
-=======
             checkBox22.Location = new Point(555, 869);
             checkBox22.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox22.Name = "checkBox22";
             checkBox22.Size = new Size(234, 45);
             checkBox22.TabIndex = 4;
@@ -656,12 +491,8 @@
             // checkBox23
             // 
             checkBox23.AutoSize = true;
-<<<<<<< Updated upstream
-            checkBox23.Location = new Point(1101, 870);
-=======
             checkBox23.Location = new Point(1101, 869);
             checkBox23.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             checkBox23.Name = "checkBox23";
             checkBox23.Size = new Size(264, 45);
             checkBox23.TabIndex = 4;
@@ -672,12 +503,8 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 9.900001F, FontStyle.Bold, GraphicsUnit.Point, 204);
-<<<<<<< Updated upstream
-            label10.Location = new Point(26, 946);
-=======
             label10.Location = new Point(26, 945);
             label10.Margin = new Padding(2, 0, 2, 0);
->>>>>>> Stashed changes
             label10.Name = "label10";
             label10.Size = new Size(104, 46);
             label10.TabIndex = 5;
@@ -685,31 +512,19 @@
             // 
             // txtDescription
             // 
-<<<<<<< Updated upstream
-            textBox2.Location = new Point(30, 1003);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(2155, 178);
-            textBox2.TabIndex = 7;
-=======
             txtDescription.Location = new Point(30, 1002);
             txtDescription.Margin = new Padding(2, 2, 2, 2);
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
             txtDescription.Size = new Size(2154, 178);
             txtDescription.TabIndex = 7;
->>>>>>> Stashed changes
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 10F);
-<<<<<<< Updated upstream
-            label11.Location = new Point(1186, 333);
-=======
             label11.Location = new Point(1186, 332);
             label11.Margin = new Padding(2, 0, 2, 0);
->>>>>>> Stashed changes
             label11.Name = "label11";
             label11.Size = new Size(267, 46);
             label11.TabIndex = 0;
@@ -717,12 +532,8 @@
             // 
             // txtGuestsAmount
             // 
-<<<<<<< Updated upstream
-            txtGuestsAmount.Location = new Point(1459, 332);
-=======
             txtGuestsAmount.Location = new Point(1460, 332);
             txtGuestsAmount.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             txtGuestsAmount.Name = "txtGuestsAmount";
             txtGuestsAmount.Size = new Size(250, 47);
             txtGuestsAmount.TabIndex = 6;
@@ -731,13 +542,8 @@
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-<<<<<<< Updated upstream
-            ClientSize = new Size(2318, 1312);
-            Controls.Add(textBox2);
-=======
             ClientSize = new Size(2247, 1830);
             Controls.Add(txtDescription);
->>>>>>> Stashed changes
             Controls.Add(txtGuestsAmount);
             Controls.Add(txtSquare);
             Controls.Add(txtRoomsNumber);
@@ -781,10 +587,7 @@
             Controls.Add(label6);
             Controls.Add(label2);
             Controls.Add(label1);
-<<<<<<< Updated upstream
-=======
             Margin = new Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
             Name = "AddNewHotel";
             Text = "Додати нове місце проживання";
             ResumeLayout(false);

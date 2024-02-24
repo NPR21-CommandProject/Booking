@@ -38,5 +38,34 @@ namespace BookingWinForm.FormsBooking
             ProfileForm form = new ProfileForm();
             form.ShowDialog();
         }
+
+        private void menuExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void MainForm_load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUserSearch_main_Click(object sender, EventArgs e)
+        {
+            // процедура пошуку користувача
+            // Створити екземпляр форми HotelsList
+            var hotelsListForm = new HotelsList();
+
+            // Відобразити форму
+            hotelsListForm.Show();
+        }
+
+        private void btnShowAllHotels_main_Click(object sender, EventArgs e)
+        {
+            // Створити екземпляр форми HotelsList
+            var hotelsListForm = new HotelsList();
+
+            // Відобразити форму
+            hotelsListForm.Show();
+        }
     }
 }
