@@ -14,6 +14,7 @@ namespace BookingWinForm.FormsBooking
 {
     public partial class LoginForm : Form
     {
+        public string Email;
         public LoginForm()
         {
             InitializeComponent();
@@ -33,6 +34,7 @@ namespace BookingWinForm.FormsBooking
             
             UserManager manager = new UserManager();
             manager.LoginUser(user.Email, user.Password);
+            Email = user.Email;
         }
     }
 }

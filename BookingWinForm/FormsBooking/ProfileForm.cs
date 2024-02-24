@@ -1,5 +1,7 @@
 ﻿using BookingWinForm.Data.Entities;
+using BookingWinForm.Options;
 using BookingWinForm.Services;
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,8 +18,19 @@ namespace BookingWinForm.FormsBooking
     {
         public ProfileForm()
         {
-
+            LoadUserProfile();
             InitializeComponent();
+        }
+
+        private void LoadUserProfile()
+        {
+            UserManager userManager = new UserManager();
+            UserEntity userEntity = new UserEntity();
+            userEntity = userManager.FillProfile();
+            lblName.Text = userEntity.FirstName;
+            lblSurname.Text = userEntity.LastName;
+            lblPhone.Text = userEntity.Phone;
+            lblEmail.Text = userEntity.Email;
         }
     }
 }

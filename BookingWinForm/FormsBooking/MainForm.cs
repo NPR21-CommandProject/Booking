@@ -38,5 +38,11 @@ namespace BookingWinForm.FormsBooking
             ProfileForm form = new ProfileForm();
             form.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ProfileForm form = new ProfileForm();
+            form.ShowDialog();
+        }
     }
 }

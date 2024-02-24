@@ -16,6 +16,8 @@ namespace BookingWinForm.Services
     internal class UserManager
     {
         private readonly SqlConnection _con;
+
+        //Для заповнення профілю
         public string Email;
         public UserManager()
         {
@@ -55,7 +57,7 @@ namespace BookingWinForm.Services
             {
                 MainForm mainForm = new MainForm();
                 mainForm.ShowDialog();
-                Email = email; 
+                Email = email;
             }
             else if (!isExist)
             {
@@ -71,17 +73,24 @@ namespace BookingWinForm.Services
         {
             try
             {
-                string sql = "INSERT INTO tblUsers (Email, Phone, FirstName, LastName, Password, DateCreated) " +
-                             "VALUES (@Email, @Phone, @FirstName, @LastName, @Password, @DateCreated);";
+                if (!IsExistUser(e, pass))
+                {
+                    string sql = "INSERT INTO tblUsers (Email, Phone, FirstName, LastName, Password, DateCreated) " +
+                                                "VALUES (@Email, @Phone, @FirstName, @LastName, @Password, @DateCreated);";
 
-                SqlCommand sqlCommand = new SqlCommand(sql, _con);
-                sqlCommand.Parameters.AddWithValue("@Email", e);
-                sqlCommand.Parameters.AddWithValue("@Phone", phone);
-                sqlCommand.Parameters.AddWithValue("@FirstName", firstN);
-                sqlCommand.Parameters.AddWithValue("@LastName", lastN);
-                sqlCommand.Parameters.AddWithValue("@Password", pass);
-                sqlCommand.Parameters.AddWithValue("@DateCreated", date);
-                sqlCommand.ExecuteNonQuery();
+                    SqlCommand sqlCommand = new SqlCommand(sql, _con);
+                    sqlCommand.Parameters.AddWithValue("@Email", e);
+                    sqlCommand.Parameters.AddWithValue("@Phone", phone);
+                    sqlCommand.Parameters.AddWithValue("@FirstName", firstN);
+                    sqlCommand.Parameters.AddWithValue("@LastName", lastN);
+                    sqlCommand.Parameters.AddWithValue("@Password", pass);
+                    sqlCommand.Parameters.AddWithValue("@DateCreated", date);
+                    sqlCommand.ExecuteNonQuery();
+                }
+                else
+                {
+                    MessageBox.Show("Користувач з такою поштою уже існує");
+                }
             }
             catch (Exception ex)
             {
@@ -89,8 +98,10 @@ namespace BookingWinForm.Services
             }
         }
 
-        public void FillProfile()
+        //Заповнення профілю користувача
+        public UserEntity FillProfile()
         {
+            UserEntity userEntity = new UserEntity();
             string sqlQuery = $"SELECT * FROM tblUsers WHERE Email = '{Email}'";
             SqlCommand command = new SqlCommand(sqlQuery, _con);
             try
@@ -98,17 +109,19 @@ namespace BookingWinForm.Services
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    string FirstName = reader["FirstName"].ToString();
-                    string LastName = reader["LastName"].ToString();
-                    string email = reader["Email"].ToString();
-                    string phone = reader["Phone"].ToString();
-                    DateTime dateOfCreation = Convert.ToDateTime(reader["DateCreated"]);
+                    userEntity.FirstName = reader["FirstName"].ToString();
+                    userEntity.LastName = reader["LastName"].ToString();
+                    userEntity.Email = reader["Email"].ToString();
+                    userEntity.Phone = reader["Phone"].ToString();
+                    //current.DateCreated = Convert.ToDateTime(reader["DateCreated"]);
                 }
                 reader.Close();
+                return userEntity;
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                return null;
             }
         }
     }
