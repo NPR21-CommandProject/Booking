@@ -157,6 +157,7 @@
             btnAddNewHotel_main.TabIndex = 4;
             btnAddNewHotel_main.Text = "Показати";
             btnAddNewHotel_main.UseVisualStyleBackColor = true;
+            btnAddNewHotel_main.Click += btnAddNewHotel_main_Click;
             // 
             // label6
             // 
@@ -257,6 +258,7 @@
             btnSearchHotels_main.TabIndex = 4;
             btnSearchHotels_main.Text = "Запуск пошуку";
             btnSearchHotels_main.UseVisualStyleBackColor = true;
+            btnSearchHotels_main.Click += btnSearchHotels_main_Click;
             // 
             // MainForm
             // 

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using BookingWinForm.Options;
 using BookingWinForm.Data.Entities;
+using BookingWinForm.Services;
 
 
 namespace BookingWinForm.Services
@@ -14,13 +15,6 @@ namespace BookingWinForm.Services
     public class UsersDataAccess
     {
         public UsersDataAccess() { }
-
-
-
-
-
-
-
 
         //public static List<User> FindUsers(string name, string email, string phone)
         //{
@@ -58,7 +52,7 @@ namespace BookingWinForm.Services
         //    }
         //}
 
-        public static User FindUserByLogin(string login)
+        public static UserEntity FindUserByLogin(string login)
         {
             //using (var connection = new SqlConnection(connectionString))
             using (var connection = new SqlConnection("server=localhost;database=booking;integrated security=True;"))
@@ -72,11 +66,11 @@ namespace BookingWinForm.Services
 
                 if (reader.Read())
                 {
-                    return new User
+                    return new UserEntity
                     {
                         Id = (int)reader["Id"],
-                        Login = (string)reader["Login"],
-                        Name = (string)reader["Name"],
+                        FirstName = (string)reader["FirstName"],
+                        LastName = (string)reader["LastName"],
                         Email = (string)reader["Email"],
                         Phone = (string)reader["Phone"]
                     };

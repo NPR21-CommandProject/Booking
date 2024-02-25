@@ -69,6 +69,8 @@
             label7 = new Label();
             label8 = new Label();
             btnSearchHotels = new Button();
+            label9 = new Label();
+            txtMaxPriceSearch = new TextBox();
             SuspendLayout();
             // 
             // Criterii
@@ -87,7 +89,7 @@
             // 
             checkBox23_S.AutoSize = true;
             checkBox23_S.Location = new Point(1086, 849);
-            checkBox23_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox23_S.Margin = new Padding(2);
             checkBox23_S.Name = "checkBox23_S";
             checkBox23_S.Size = new Size(264, 45);
             checkBox23_S.TabIndex = 5;
@@ -98,7 +100,7 @@
             // 
             checkBox20_S.AutoSize = true;
             checkBox20_S.Location = new Point(1082, 800);
-            checkBox20_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox20_S.Margin = new Padding(2);
             checkBox20_S.Name = "checkBox20_S";
             checkBox20_S.Size = new Size(235, 45);
             checkBox20_S.TabIndex = 26;
@@ -109,7 +111,7 @@
             // 
             checkBox13_S.AutoSize = true;
             checkBox13_S.Location = new Point(557, 802);
-            checkBox13_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox13_S.Margin = new Padding(2);
             checkBox13_S.Name = "checkBox13_S";
             checkBox13_S.Size = new Size(376, 45);
             checkBox13_S.TabIndex = 25;
@@ -120,7 +122,7 @@
             // 
             checkBox22_S.AutoSize = true;
             checkBox22_S.Location = new Point(557, 851);
-            checkBox22_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox22_S.Margin = new Padding(2);
             checkBox22_S.Name = "checkBox22_S";
             checkBox22_S.Size = new Size(234, 45);
             checkBox22_S.TabIndex = 24;
@@ -131,7 +133,7 @@
             // 
             checkBox21_S.AutoSize = true;
             checkBox21_S.Location = new Point(11, 849);
-            checkBox21_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox21_S.Margin = new Padding(2);
             checkBox21_S.Name = "checkBox21_S";
             checkBox21_S.Size = new Size(142, 45);
             checkBox21_S.TabIndex = 23;
@@ -142,7 +144,7 @@
             // 
             checkBox6_S.AutoSize = true;
             checkBox6_S.Location = new Point(11, 800);
-            checkBox6_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox6_S.Margin = new Padding(2);
             checkBox6_S.Name = "checkBox6_S";
             checkBox6_S.Size = new Size(173, 45);
             checkBox6_S.TabIndex = 22;
@@ -153,7 +155,7 @@
             // 
             checkBox19_S.AutoSize = true;
             checkBox19_S.Location = new Point(1082, 748);
-            checkBox19_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox19_S.Margin = new Padding(2);
             checkBox19_S.Name = "checkBox19_S";
             checkBox19_S.Size = new Size(111, 45);
             checkBox19_S.TabIndex = 21;
@@ -164,7 +166,7 @@
             // 
             checkBox12_S.AutoSize = true;
             checkBox12_S.Location = new Point(557, 750);
-            checkBox12_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox12_S.Margin = new Padding(2);
             checkBox12_S.Name = "checkBox12_S";
             checkBox12_S.Size = new Size(192, 45);
             checkBox12_S.TabIndex = 20;
@@ -175,7 +177,7 @@
             // 
             checkBox5_S.AutoSize = true;
             checkBox5_S.Location = new Point(11, 748);
-            checkBox5_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox5_S.Margin = new Padding(2);
             checkBox5_S.Name = "checkBox5_S";
             checkBox5_S.Size = new Size(192, 45);
             checkBox5_S.TabIndex = 19;
@@ -186,7 +188,7 @@
             // 
             checkBox18_S.AutoSize = true;
             checkBox18_S.Location = new Point(1082, 592);
-            checkBox18_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox18_S.Margin = new Padding(2);
             checkBox18_S.Name = "checkBox18_S";
             checkBox18_S.Size = new Size(235, 45);
             checkBox18_S.TabIndex = 18;
@@ -197,7 +199,7 @@
             // 
             checkBox11_S.AutoSize = true;
             checkBox11_S.Location = new Point(557, 594);
-            checkBox11_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox11_S.Margin = new Padding(2);
             checkBox11_S.Name = "checkBox11_S";
             checkBox11_S.Size = new Size(366, 45);
             checkBox11_S.TabIndex = 17;
@@ -208,7 +210,7 @@
             // 
             checkBox2_S.AutoSize = true;
             checkBox2_S.Location = new Point(11, 592);
-            checkBox2_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox2_S.Margin = new Padding(2);
             checkBox2_S.Name = "checkBox2_S";
             checkBox2_S.Size = new Size(275, 45);
             checkBox2_S.TabIndex = 16;
@@ -219,7 +221,7 @@
             // 
             checkBox17_S.AutoSize = true;
             checkBox17_S.Location = new Point(1082, 697);
-            checkBox17_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox17_S.Margin = new Padding(2);
             checkBox17_S.Name = "checkBox17_S";
             checkBox17_S.Size = new Size(239, 45);
             checkBox17_S.TabIndex = 15;
@@ -230,7 +232,7 @@
             // 
             checkBox10_S.AutoSize = true;
             checkBox10_S.Location = new Point(557, 699);
-            checkBox10_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox10_S.Margin = new Padding(2);
             checkBox10_S.Name = "checkBox10_S";
             checkBox10_S.Size = new Size(302, 45);
             checkBox10_S.TabIndex = 14;
@@ -241,7 +243,7 @@
             // 
             checkBox4_S.AutoSize = true;
             checkBox4_S.Location = new Point(11, 697);
-            checkBox4_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox4_S.Margin = new Padding(2);
             checkBox4_S.Name = "checkBox4_S";
             checkBox4_S.Size = new Size(502, 45);
             checkBox4_S.TabIndex = 13;
@@ -252,7 +254,7 @@
             // 
             checkBox16_S.AutoSize = true;
             checkBox16_S.Location = new Point(1082, 646);
-            checkBox16_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox16_S.Margin = new Padding(2);
             checkBox16_S.Name = "checkBox16_S";
             checkBox16_S.Size = new Size(318, 45);
             checkBox16_S.TabIndex = 12;
@@ -263,7 +265,7 @@
             // 
             checkBox9_S.AutoSize = true;
             checkBox9_S.Location = new Point(557, 648);
-            checkBox9_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox9_S.Margin = new Padding(2);
             checkBox9_S.Name = "checkBox9_S";
             checkBox9_S.Size = new Size(318, 45);
             checkBox9_S.TabIndex = 11;
@@ -274,7 +276,7 @@
             // 
             checkBox3_S.AutoSize = true;
             checkBox3_S.Location = new Point(11, 646);
-            checkBox3_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox3_S.Margin = new Padding(2);
             checkBox3_S.Name = "checkBox3_S";
             checkBox3_S.Size = new Size(352, 45);
             checkBox3_S.TabIndex = 10;
@@ -285,7 +287,7 @@
             // 
             checkBox15_S.AutoSize = true;
             checkBox15_S.Location = new Point(1082, 541);
-            checkBox15_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox15_S.Margin = new Padding(2);
             checkBox15_S.Name = "checkBox15_S";
             checkBox15_S.Size = new Size(255, 45);
             checkBox15_S.TabIndex = 9;
@@ -296,7 +298,7 @@
             // 
             checkBox8_S.AutoSize = true;
             checkBox8_S.Location = new Point(557, 543);
-            checkBox8_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox8_S.Margin = new Padding(2);
             checkBox8_S.Name = "checkBox8_S";
             checkBox8_S.Size = new Size(456, 45);
             checkBox8_S.TabIndex = 8;
@@ -307,7 +309,7 @@
             // 
             checkBox1_S.AutoSize = true;
             checkBox1_S.Location = new Point(11, 541);
-            checkBox1_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox1_S.Margin = new Padding(2);
             checkBox1_S.Name = "checkBox1_S";
             checkBox1_S.Size = new Size(413, 45);
             checkBox1_S.TabIndex = 7;
@@ -318,7 +320,7 @@
             // 
             checkBox14_S.AutoSize = true;
             checkBox14_S.Location = new Point(1082, 490);
-            checkBox14_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox14_S.Margin = new Padding(2);
             checkBox14_S.Name = "checkBox14_S";
             checkBox14_S.Size = new Size(536, 45);
             checkBox14_S.TabIndex = 6;
@@ -329,7 +331,7 @@
             // 
             checkBox7_S.AutoSize = true;
             checkBox7_S.Location = new Point(557, 492);
-            checkBox7_S.Margin = new Padding(2, 2, 2, 2);
+            checkBox7_S.Margin = new Padding(2);
             checkBox7_S.Name = "checkBox7_S";
             checkBox7_S.Size = new Size(470, 45);
             checkBox7_S.TabIndex = 27;
@@ -340,7 +342,7 @@
             // 
             checkBoxWiFiS.AutoSize = true;
             checkBoxWiFiS.Location = new Point(11, 490);
-            checkBoxWiFiS.Margin = new Padding(2, 2, 2, 2);
+            checkBoxWiFiS.Margin = new Padding(2);
             checkBoxWiFiS.Name = "checkBoxWiFiS";
             checkBoxWiFiS.Size = new Size(321, 45);
             checkBoxWiFiS.TabIndex = 28;
@@ -350,7 +352,7 @@
             // txtRoomsNumberSearch
             // 
             txtRoomsNumberSearch.Location = new Point(21, 90);
-            txtRoomsNumberSearch.Margin = new Padding(2, 2, 2, 2);
+            txtRoomsNumberSearch.Margin = new Padding(2);
             txtRoomsNumberSearch.Name = "txtRoomsNumberSearch";
             txtRoomsNumberSearch.Size = new Size(250, 47);
             txtRoomsNumberSearch.TabIndex = 29;
@@ -358,7 +360,7 @@
             // txtSquareSearch
             // 
             txtSquareSearch.Location = new Point(385, 90);
-            txtSquareSearch.Margin = new Padding(2, 2, 2, 2);
+            txtSquareSearch.Margin = new Padding(2);
             txtSquareSearch.Name = "txtSquareSearch";
             txtSquareSearch.Size = new Size(250, 47);
             txtSquareSearch.TabIndex = 30;
@@ -366,7 +368,7 @@
             // txtGuestsAmountSearch
             // 
             txtGuestsAmountSearch.Location = new Point(712, 90);
-            txtGuestsAmountSearch.Margin = new Padding(2, 2, 2, 2);
+            txtGuestsAmountSearch.Margin = new Padding(2);
             txtGuestsAmountSearch.Name = "txtGuestsAmountSearch";
             txtGuestsAmountSearch.Size = new Size(250, 47);
             txtGuestsAmountSearch.TabIndex = 31;
@@ -406,8 +408,8 @@
             // 
             // dateTimePicker2_Search
             // 
-            dateTimePicker2_Search.Location = new Point(1152, 178);
-            dateTimePicker2_Search.Margin = new Padding(2, 2, 2, 2);
+            dateTimePicker2_Search.Location = new Point(1152, 161);
+            dateTimePicker2_Search.Margin = new Padding(2);
             dateTimePicker2_Search.Name = "dateTimePicker2_Search";
             dateTimePicker2_Search.Size = new Size(391, 47);
             dateTimePicker2_Search.TabIndex = 42;
@@ -415,7 +417,7 @@
             // dateTimePicker1_Search
             // 
             dateTimePicker1_Search.Location = new Point(1152, 86);
-            dateTimePicker1_Search.Margin = new Padding(2, 2, 2, 2);
+            dateTimePicker1_Search.Margin = new Padding(2);
             dateTimePicker1_Search.Name = "dateTimePicker1_Search";
             dateTimePicker1_Search.Size = new Size(391, 47);
             dateTimePicker1_Search.TabIndex = 43;
@@ -424,7 +426,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 10F);
-            label4.Location = new Point(1050, 178);
+            label4.Location = new Point(1050, 161);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new Size(71, 46);
@@ -434,8 +436,8 @@
             // txtAdressSearch
             // 
             txtAdressSearch.Font = new Font("Segoe UI", 10F);
-            txtAdressSearch.Location = new Point(11, 324);
-            txtAdressSearch.Margin = new Padding(2, 2, 2, 2);
+            txtAdressSearch.Location = new Point(680, 319);
+            txtAdressSearch.Margin = new Padding(2);
             txtAdressSearch.Name = "txtAdressSearch";
             txtAdressSearch.Size = new Size(873, 52);
             txtAdressSearch.TabIndex = 40;
@@ -445,8 +447,8 @@
             // txtCitySearch
             // 
             txtCitySearch.Font = new Font("Segoe UI", 10F);
-            txtCitySearch.Location = new Point(1005, 324);
-            txtCitySearch.Margin = new Padding(2, 2, 2, 2);
+            txtCitySearch.Location = new Point(11, 319);
+            txtCitySearch.Margin = new Padding(2);
             txtCitySearch.Name = "txtCitySearch";
             txtCitySearch.Size = new Size(612, 52);
             txtCitySearch.TabIndex = 41;
@@ -468,7 +470,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9.900001F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label6.Location = new Point(11, 256);
+            label6.Location = new Point(692, 261);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
             label6.Size = new Size(139, 46);
@@ -490,7 +492,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9.900001F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label8.Location = new Point(1005, 256);
+            label8.Location = new Point(21, 261);
             label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
             label8.Size = new Size(115, 46);
@@ -501,12 +503,32 @@
             // 
             btnSearchHotels.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnSearchHotels.Location = new Point(1454, 697);
-            btnSearchHotels.Margin = new Padding(6, 6, 6, 6);
+            btnSearchHotels.Margin = new Padding(6);
             btnSearchHotels.Name = "btnSearchHotels";
             btnSearchHotels.Size = new Size(217, 201);
             btnSearchHotels.TabIndex = 45;
             btnSearchHotels.Text = "Найти ";
             btnSearchHotels.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 9.900001F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label9.Location = new Point(21, 177);
+            label9.Margin = new Padding(2, 0, 2, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(545, 46);
+            label9.TabIndex = 39;
+            label9.Text = "Максимальна ціна за добу , грн";
+            // 
+            // txtMaxPriceSearch
+            // 
+            txtMaxPriceSearch.BackColor = Color.NavajoWhite;
+            txtMaxPriceSearch.Location = new Point(712, 177);
+            txtMaxPriceSearch.Margin = new Padding(2);
+            txtMaxPriceSearch.Name = "txtMaxPriceSearch";
+            txtMaxPriceSearch.Size = new Size(250, 47);
+            txtMaxPriceSearch.TabIndex = 30;
             // 
             // SearchForm
             // 
@@ -522,11 +544,13 @@
             Controls.Add(label5);
             Controls.Add(label6);
             Controls.Add(label7);
+            Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtGuestsAmountSearch);
+            Controls.Add(txtMaxPriceSearch);
             Controls.Add(txtSquareSearch);
             Controls.Add(txtRoomsNumberSearch);
             Controls.Add(checkBox23_S);
@@ -554,9 +578,9 @@
             Controls.Add(checkBox7_S);
             Controls.Add(checkBoxWiFiS);
             Controls.Add(Criterii);
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "SearchForm";
-            Text = "SearchResult";
+            Text = "Форма Пошуку";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -604,5 +628,7 @@
         private Label label7;
         private Label label8;
         private Button btnSearchHotels;
+        private Label label9;
+        private TextBox txtMaxPriceSearch;
     }
 }

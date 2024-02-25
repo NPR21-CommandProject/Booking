@@ -51,12 +51,7 @@ namespace BookingWinForm.FormsBooking
 
         private void btnUserSearch_main_Click(object sender, EventArgs e)
         {
-            // процедура пошуку користувача
-            // Створити екземпляр форми HotelsList
-            var hotelsListForm = new HotelsList();
-
-            // Відобразити форму
-            hotelsListForm.Show();
+ 
         }
 
         private void btnShowAllHotels_main_Click(object sender, EventArgs e)
@@ -66,6 +61,19 @@ namespace BookingWinForm.FormsBooking
 
             // Відобразити форму
             hotelsListForm.Show();
+        }
+
+        private void btnAddNewHotel_main_Click(object sender, EventArgs e)
+        {
+            var addNewHotelForm = new AddNewHotel();
+            addNewHotelForm.Show();
+        }
+
+        private void btnSearchHotels_main_Click(object sender, EventArgs e)
+        {
+            var searchHotelForm = new SearchForm();
+            searchHotelForm.Show();
+            
         }
     }
 }

@@ -20,7 +20,20 @@ namespace BookingWinForm.FormsBooking
         private void HotelsList_Load(object sender, EventArgs e)
         {
             dgvHotelsList.Rows.Clear();
-            dgvHotelsList.Rows.Add(" "); ///  тест -змінити
+            dgvHotelsList.Rows.Add(" bbb "); ///  тест -змінити
+        }
+
+        private void btnShowHotel_Click(object sender, EventArgs e)
+        {
+            var showHotelForm = new ShowHotel();
+            showHotelForm.Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var addNewHotelForm = new AddNewHotel();
+            addNewHotelForm.ShowDialog();
         }
     }
 }
